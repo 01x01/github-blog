@@ -1,0 +1,1 @@
+https://www.slmt.tw/blog/2019/04/26/hexo-auto-deploy/
