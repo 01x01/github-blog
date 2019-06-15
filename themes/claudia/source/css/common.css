@@ -1,7 +1,9 @@
 .debug {
     border: 1px solid red;
 }
-
+body{
+    height: 100%;
+}
 /*layout start*/
 .flex {
     display: flex;

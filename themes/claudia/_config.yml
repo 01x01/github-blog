@@ -1,7 +1,8 @@
 # Header
 menu:
   Home: /
-  Backup: /backup
+  Security: /security
+  About: /about
 rss: /atom.xml
 
 # User Info

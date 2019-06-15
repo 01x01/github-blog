@@ -48,7 +48,6 @@
         color: #fff;
         background-color: gray;
     }
-    
 </style>
 <aside class="column is-hidden-touch is-3" style="max-width: 280px; min-width: 230px">
     <div class="content-box user-info">
@@ -161,6 +160,26 @@
             </div>
         </div>
     </div>
+  
+    <div class="content-inner content-box">
+        <div class="has-text-centered">
+            <strong>Categories</strong>
+        </div>
+        <div class="content-inner">
+            <%- list_categories(site.categories, {
+                depth: 1
+            }) %>
+        </div>
+    </div>
+
+    <div class="content-inner content-box">
+        <div class="has-text-centered">
+            <strong>Archives</strong>
+        </div>
+        <div class="content-inner">
+            <%- list_archives(site.archives,{}) %>
+        </div>
+    </div>
     <div id='tag_cloud' class="content-inner content-box">
         <div class="has-text-centered">
             <strong>Tags</strong>
@@ -173,16 +192,4 @@
             <% }) %>
         </div>
     </div>
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Categories</strong>
-        </div>
-        <div class="content-inner">
-            <%- list_categories(site.categories, {
-                depth: 1
-            }) %>
-        </div>
-    </div>
-    
-
 </aside>
