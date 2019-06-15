@@ -3,40 +3,33 @@
     .user-info {
         padding: 15px 0 0;
     }
-
     .user-info .avatar {
         width: 155px;
         height: 155px;
         border-radius: 50%;
     }
-
     .sns-container {
         flex-wrap: wrap;
     }
-
     .sns-container a{
         color: black;
     }
     /*user info end*/
-
     /*Tag start*/
     #tag_cloud .tags-item{
         display: inline-block;
         color: #000;
         border: 1px solid gray;
-
         margin: 4px 2px;
         padding: 0 4px;
         border-radius: 6px;
     }
     /*Tag end*/
-
     /*Site box start*/
     .site-box {
         height: 60px;
     }
     /*Site box end*/
-
     .category-list-item,
     .archive-list-item {
         display: flex;
@@ -47,7 +40,6 @@
     .archive-list-link {
         color: black;
     }
-
     .category-list-count,
     .archive-list-count {
         width: 32px;
@@ -56,6 +48,7 @@
         color: #fff;
         background-color: gray;
     }
+    
 </style>
 <aside class="column is-hidden-touch is-3" style="max-width: 280px; min-width: 230px">
     <div class="content-box user-info">
@@ -168,7 +161,6 @@
             </div>
         </div>
     </div>
-
     <div id='tag_cloud' class="content-inner content-box">
         <div class="has-text-centered">
             <strong>Tags</strong>
@@ -181,7 +173,6 @@
             <% }) %>
         </div>
     </div>
-    
     <div class="content-inner content-box">
         <div class="has-text-centered">
             <strong>Categories</strong>
@@ -192,13 +183,6 @@
             }) %>
         </div>
     </div>
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Archives</strong>
-        </div>
-        <div class="content-inner">
-            <%- list_archives(site.archives,{}) %>
-        </div>
-    </div>
     
+
 </aside>
