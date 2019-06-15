@@ -82,10 +82,10 @@
                 <% if (theme.twitter_username) { %>
                 <li>
                     <a target="_blank" href="https://twitter.com/<%= theme.twitter_username %>">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                        </span>
+                        <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span>
                     </a>
                 </li>
                 <% } %>
@@ -160,26 +160,6 @@
             </div>
         </div>
     </div>
-  
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Categories</strong>
-        </div>
-        <div class="content-inner">
-            <%- list_categories(site.categories, {
-                depth: 1
-            }) %>
-        </div>
-    </div>
-
-    <div class="content-inner content-box">
-        <div class="has-text-centered">
-            <strong>Archives</strong>
-        </div>
-        <div class="content-inner">
-            <%- list_archives(site.archives,{}) %>
-        </div>
-    </div>
     <div id='tag_cloud' class="content-inner content-box">
         <div class="has-text-centered">
             <strong>Tags</strong>
@@ -190,6 +170,24 @@
                     <%= tag.name %>
                 </a>
             <% }) %>
+        </div>
+    </div>
+    <div class="content-inner content-box">
+        <div class="has-text-centered">
+            <strong>Categories</strong>
+        </div>
+        <div class="content-inner">
+            <%- list_categories(site.categories, {
+                depth: 1
+            }) %>
+        </div>
+    </div>
+    <div class="content-inner content-box">
+        <div class="has-text-centered">
+            <strong>Archives</strong>
+        </div>
+        <div class="content-inner">
+            <%- list_archives(site.archives,{}) %>
         </div>
     </div>
 </aside>
