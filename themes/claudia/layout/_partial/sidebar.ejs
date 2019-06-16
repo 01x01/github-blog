@@ -164,12 +164,15 @@
         <div class="has-text-centered">
             <strong>Tags</strong>
         </div>
-        <div class="content-inner is-flex flex-wrap justify-space-between">
-            <% site.tags.map(function(tag){ %>
+        <div class="content-inner">
+            <!-- <% site.tags.map(function(tag){ %>
                 <a class="tags-item" href="<%= tag.path %>" title="<%= tag.name %>" rel="<%= tag.length %>">
                     <%= tag.name %>
                 </a>
-            <% }) %>
+            <% }) %> -->
+            <%- list_categories(site.tags, {
+                depth: 1
+            }) %>
         </div>
     </div>
     <div class="content-inner content-box">
