@@ -229,7 +229,7 @@ avatar:
   # You can also use other linking images.
   url:  https://raw.githubusercontent.com/01x01/github-blog/master/source/img/avatar.jpg
   # If true, the avatar would be dispalyed in circle.
-  rounded: false
+  rounded: true
   # The value of opacity should be choose from 0 to 1 to set the opacity of the avatar.
   opacity: 1
   # If true, the avatar would be rotated with the cursor.
@@ -269,7 +269,7 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
   # Click any blank part of the page to close sidebar (only for Muse | Mist).
-  dimmer: false
+  dimmer: true
 
 back2top:
   enable: true
