@@ -12,9 +12,8 @@ cache:
 node_js:
   - "stable"
 
-before_script:
+install:
   - npm install
-  - hexo cl
 
 script:
   - hexo clean 
