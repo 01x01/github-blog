@@ -1,11 +1,11 @@
 ---
 title: BeautifulSoup
 date: 2019-06-16 01:10:51
-tags: python第三方模块
+tags: pythonpm
 category: python
 ---
+![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/alliance.png)
 # 概述
-
 BeautifulSoup 是 python 里面流行的爬虫模块，简单记录一下其使用方法。
 
 # 安装

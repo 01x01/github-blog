@@ -1,7 +1,7 @@
 ---
 title: fuzzywuzzy
 date: 2019-06-16 01:10:51
-tags: python第三方模块
+tags: pythonpm
 category: python
 ---
 

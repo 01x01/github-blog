@@ -1,6 +1,6 @@
 ---
 title: pytest
-tags: 
+tags: pythonpm
 category: python
 ---
 # 安装
