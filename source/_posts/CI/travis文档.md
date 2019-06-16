@@ -62,7 +62,7 @@ branches:
   only:
   - master
   - stable
-···
+```
 
 # github page 的部署
 最后给出 github page 的部署文件供参考
