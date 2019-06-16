@@ -1,7 +1,7 @@
 ---
 title: BeautifulSoup
 date: 2019-06-16 01:10:51
-tags: pythonpm
+tags: python第三方模块
 category: python
 ---
 ![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/alliance.png)

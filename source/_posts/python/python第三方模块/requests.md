@@ -1,6 +1,6 @@
 ---
 title: requests
-tags: pythonpm
+tags: python第三方模块
 category: python
 ---
 # 概述

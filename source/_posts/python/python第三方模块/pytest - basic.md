@@ -1,6 +1,6 @@
 ---
 title: pytest
-tags: pythonpm
+tags: python第三方模块
 category: python
 ---
 # 安装

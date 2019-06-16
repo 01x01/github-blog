@@ -17,6 +17,7 @@ before_script:
   - hexo cl
 
 script:
+  - hexo clean 
   - hexo generate
 
 deploy:
