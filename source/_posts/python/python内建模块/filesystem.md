@@ -4,7 +4,6 @@ date: 2019-06-16 15:05:17
 tags: python内建模块
 category: python 
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/ants.png)
 # 概述
 `os.path` 是python跨平台的路径处理模块。
 

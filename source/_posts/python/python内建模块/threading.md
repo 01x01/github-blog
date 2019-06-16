@@ -4,9 +4,6 @@ date: 2019-06-16 16:04:44
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/sthereo-glasses.png)
-# Concurrency - threading
-
 
 # 概述
 多线程模块，鉴于Python的特殊性，多线程在python中多用于IO密集型计算，不适用于CPU密集型计算，工作中常见的场景是将其与队列结合使用。

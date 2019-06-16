@@ -4,7 +4,7 @@ date: 2019-06-16 01:10:51
 tags: python第三方模块
 category: python
 ---
-![img]()
+
 # 安装
 ```
 pip install jira

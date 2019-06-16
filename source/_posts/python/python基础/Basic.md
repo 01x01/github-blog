@@ -4,7 +4,6 @@ date: 2019-06-16 01:10:51
 tags: python基础
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/alliance.png)
 # 概述
 Python是一门计算机程序设计的语言，语法优雅，是目前很火热的一门编程语言，<br />其优点有：
 

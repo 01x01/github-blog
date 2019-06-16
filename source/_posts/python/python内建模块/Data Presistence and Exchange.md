@@ -4,9 +4,6 @@ date: 2019-06-16 16:10:53
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/ants.png)
-# Data Presistence and Exchange
-
 
 # 概述
 数据持久化和交换，涉及到几部分，一个是序列化和反序列化数据，一个是数据的存储，比如将数据存入数据库，csv等等介质中，首先了解一下什么是序列化和反序列化:

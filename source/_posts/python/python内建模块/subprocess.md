@@ -4,9 +4,6 @@ date: 2019-06-16 16:05:23
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/Wall_Fables_II.png)
-# Concurrency - subprocess
-
 
 # 概述
 subprocess 模块包装了一个子进程用来执行系统命令。

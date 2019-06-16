@@ -4,11 +4,6 @@ date: 2019-06-16 16:03:14
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/paparametric_sphere.png)
-# Internet - urllib.parse
-
-
-#  urllib.parse 
 
 ## urlparse
 主要的作用就是解析url，返回一个对象 `ParseResult` ，其中包含了6个元素，见代码

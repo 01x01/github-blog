@@ -4,9 +4,6 @@ date: 2019-06-16 16:04:03
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/Tarmac.png)
-# Concurrency - asyncio
-
 
 # 概述
 协程，也是并发编程的一种，不同于多进程或者多线程，asyncio使用单线程，单进程的方式进行程序的切换，比如在进行文件读写的时候，进行程序级别的上下文切换，进入下一个程序入口执行（可以简单的认为是一个函数），整体是一个异步的过程。

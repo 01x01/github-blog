@@ -4,7 +4,6 @@ date: 2019-06-16 15:57:08
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/newspaper.png)
 # 概述
 python 里面命令行参数模块。
 

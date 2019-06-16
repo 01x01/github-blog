@@ -4,7 +4,6 @@ date: 2019-06-16 15:55:32
 tags: python内建模块
 category: python
 ---
-![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/meaty.png)
 
 # 概述
  不管是调试还是记录追查问题，在代码中设置 log 都是很有必要，不然程序除了问题以后，很难追踪到具体是啥问题造成的。log 的表现由两种形式，一种是命令行直接输出，一种是写入文件。在这里记录一下常用的办法，方便以后直接拿来用即可。
