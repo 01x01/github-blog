@@ -269,7 +269,7 @@ sidebar:
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
   # Click any blank part of the page to close sidebar (only for Muse | Mist).
-  dimmer: true
+  dimmer: false
 
 back2top:
   enable: true
