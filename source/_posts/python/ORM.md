@@ -3,7 +3,7 @@ title: ORM
 tags: flask
 category: python
 ---
-
+![img](https://raw.githubusercontent.com/01x01/github-blog/master/source/img/1.jpg)
 # 概述
 ORM (Object Relational Mapping) 意思就是将数据库表映射为代码中的对象，通过在代码中编写对象来达到操作数据库的效果。ORM有许多的好处，比如，操作数据库的代码更加的面向对象化了，在一定程度上避免了SQL注入的危险等等，在 flask 中使用 ORM需要用到 `flask-sqlalchemy` 模块
 
