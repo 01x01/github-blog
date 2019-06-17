@@ -3,11 +3,8 @@ title: systemd
 date: 2019-06-17 11:18:45
 tags: Linux
 category: Linux
+keyword: systemd
 ---
-
-[http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)<br />[https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
-
-
 # 概述
 Systemd 是用来启动守护进程的，可以用于 Linux 服务器的自启动，简单记录一下其用法。一般 systemctl 命令的配置文件放置于 `/usr/lib/systemd/system`  里面. 分为三个部分， `Unit`  `[Service]` `[Install]` 
 
@@ -68,3 +65,6 @@ Also：当前 Unit 激活（enable）时，会被同时激活的其他 Unit
 ```
 
 
+# 参考
+
+[http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html](http://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-commands.html)[https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html](https://www.ruanyifeng.com/blog/2016/03/systemd-tutorial-part-two.html)
