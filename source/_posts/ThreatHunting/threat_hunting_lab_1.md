@@ -1,8 +1,8 @@
 ---
 title: threat hunting lab - part1  
 date: 2019-06-17 22:16:24
-tags: threat hunting lab
-category: threat hunting lab
+tags: threat-hunting-lab
+category: threat-hunting-lab
 ---
 # 关键字： 威胁猎杀，威胁猎杀实验室，windows server，pfsense，ESXI
 # 概述
