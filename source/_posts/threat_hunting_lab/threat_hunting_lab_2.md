@@ -2,7 +2,7 @@
 title: threat hunting lab part 2
 date: 2019-06-18 21:48:14
 tags: threat-hunting-lab
-category: threat-hunting-lab
+category: [threat-hunting-lab,security]
 ---
 # 关键字： Windows server 2012；Active Directory;
 # 概述
