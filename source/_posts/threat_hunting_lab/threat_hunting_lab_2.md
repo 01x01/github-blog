@@ -7,7 +7,7 @@ category: threat-hunting-lab
 # 关键字： Windows server 2012；Active Directory;
 # 概述
 本文记录如何一步步搭建一个 active directory lab
-
+<!-- more -->
 # Active Directory
 baidu百科的解释： 
 > 活动目录（Active Directory）是面向Windows Standard Server、Windows Enterprise Server以及 Windows Datacenter Server的目录服务。（Active Directory不能运行在Windows Web Server上，但是可以通过它对运行Windows Web Server的计算机进行管理。）Active Directory存储了有关网络对象的信息，并且让管理员和用户能够轻松地查找和使用这些信息。Active Directory使用了一种结构化的数据存储方式，并以此作为基础对目录信息进行合乎逻辑的分层组织 
