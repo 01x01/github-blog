@@ -159,10 +159,9 @@ baidu_push: false
 menu:
   home: / || home
   about: /about/ || user
-  tags: /tags/ || tags
+  security: /categories/security 
+  python: /categories/python 
   categories: /categories/ || th
-  archives: /archives/ || archive
-  cheatsheet: /cheatsheet/ || cheatsheet
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
