@@ -4,10 +4,9 @@ date: 2019-06-19 20:25:26
 tags: threat-hunting-lab
 category: [threat-hunting-lab,security]
 ---
-# 关键字： Active Directory;domain forests;
-# 概述
 设置 Windows server 2012 为 domain controller 和 DHCP 服务器
 <!-- more -->
+关键字： Active Directory;domain forests;
 # Active Directory 结构
 |元素|描述|
 | ----|----|

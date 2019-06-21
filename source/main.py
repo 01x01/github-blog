@@ -6,7 +6,6 @@ import random
 article_name = input("Please enter your article name: ")
 tag = input("Please enter your tag name: ")
 category = input("Please enter your category name: ")
-keyword=input("Enter keyword")
 
 
 with open(os.path.join("_posts",article_name+".md"),'w') as f:
@@ -16,6 +15,5 @@ date: {}
 tags: {}
 category: {}
 ---
-关键字：{}
 <!-- more -->
-""".format(article_name,datetime.strftime(datetime.now(),"%Y-%m-%d %H:%M:%S"),tag,category),keyword)
+""".format(article_name,datetime.strftime(datetime.now(),"%Y-%m-%d %H:%M:%S"),tag,category))
