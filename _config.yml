@@ -8,13 +8,14 @@ subtitle: 打工是不可能打工的，做生意又不会。
 description: 打工是不可能打工的，做生意又不会。
 author: John.W
 email: thinkingandcoding@gmail.com
-keywords: "前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"
+keywords: "前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"
+
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://secv.xyz
 root: /
-permalink: :category/:entitle-:timestamp.html
+permalink: :year/:month/:day/:title/
 permalink_defaults:
 
 # Directory
@@ -26,9 +27,6 @@ category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
-
-
-
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -43,18 +41,10 @@ future: true
 highlight:
   enable: true
   line_number: true
-  auto_detect: true
+  auto_detect: false
   tab_replace:
 
-# custom
-# Category & Tag
-default_category: 技术
-category_map:
-   security: security
-   python: python
-   Linux: linux
-
-
+ 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
 # per_page: Posts displayed per page. (0 = disable pagination)
