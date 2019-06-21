@@ -1,5 +1,5 @@
 ---
-title: threat_hunting_lab2
+title: threat hunting lab part 2
 date: 2019-06-18 21:48:14
 tags: threat-hunting-lab
 category: threat-hunting-lab
