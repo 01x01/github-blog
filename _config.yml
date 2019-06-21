@@ -8,7 +8,7 @@ subtitle: 打工是不可能打工的，做生意又不会。
 description: 打工是不可能打工的，做生意又不会。
 author: John.W
 email: thinkingandcoding@gmail.com
-keywords: "前端,js,jquery,javascript,html5,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"
+keywords: "前端,js,jquery,javascript,html5,开发者,程序猿,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,html,css,css3,用户体验"
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
@@ -89,7 +89,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: jsimple
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
