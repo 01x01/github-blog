@@ -1,0 +1,34 @@
+menu:
+    Home: /
+    Security: /categories/security/
+    Python: /categories/python/
+    # 摄影: /categories/film/
+    # 关于: /about/
+
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+
+# count
+show_count: true
+favicon: /images/favicon.ico
+logo: /images/logo.png
+
+# Comment
+#changyan: bubuzou
+leancloud:
+    appid:  # 填写您的appid
+    appkey:  # 填写您的appkey
+    comment: false # 是否开启评论系统
+    timer: true # 是否开启文章统计
+
+
+# Analytics
+# google-analytics:
+ga: 
+
+# Copyright Infomation
+startyear: 2019
+
