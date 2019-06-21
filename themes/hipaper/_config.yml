@@ -6,14 +6,15 @@
 menu:
   Home: /
   Archives: archives
-  Categories: categories
+  Security: categories/security
+  Python: categories/python
   Tags: tags
   About: about
 rss: /atom.xml
 
 
 # Set default keywords (Use a comma to separate)
-keywords: ""
+keywords: "security researcher,vulnerabilities,code,coding,program,security,bug bounty"
 
 # Put your favicon.ico into `hexo-site/themes/hipaper/source/` directory.
 favicon: css/images/favicon.ico
@@ -56,7 +57,7 @@ widgets:
 # Key is the name of FontAwsome icon.
 # Value is the target link (E.g. GitHub: https://github.com/iTimeTraveler)
 social:
-  Github: https://github.com/iTimeTraveler
+  Github: 
   Weibo: 
   Twitter: 
   Facebook: 
@@ -74,7 +75,7 @@ search:
 # comment ShortName, you can choose only ONE to display.
 duoshuo_shortname: 
 disqus_shortname: 
-livere_shortname: MTAyMC8yOTQ4MS82MDQ5
+livere_shortname: 
 uyan_uid: 
 wumii: 
 
@@ -117,4 +118,4 @@ facebook_sdk:
   webmaster:    #true
 
 # CNZZ count
-cnzz_siteid: 1260716016
+cnzz_siteid: 
