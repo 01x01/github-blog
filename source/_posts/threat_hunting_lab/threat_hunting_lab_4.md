@@ -4,7 +4,7 @@ date: 2019-06-23 22:56:15
 tags: threat-hunting-lab
 category: threat-hunting-lab,security
 ---
-
+threat hunting lab part 4 如何创建组织单元
 
 <!-- more -->
 
