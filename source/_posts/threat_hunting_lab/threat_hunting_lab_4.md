@@ -26,24 +26,24 @@ category: threat-hunting-lab,security
 
 ![img](/postimg/lab4-8.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-9.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-10.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-11.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-12.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-13.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-14.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-15.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-16.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-17.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-18.jpg)
 
-![img](/postimg/lab4-1.jpg)
+![img](/postimg/lab4-19.jpg)
