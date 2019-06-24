@@ -7,7 +7,16 @@ category: Linux
 CentOS 7 安装和配置
 <!-- more -->
 # 使用虚拟机安装 CentOS 7 
+安装 vmware Fusion pro11, 其序列号为：
+
+```ini
+for VMware Fusion/Pro 11
+1	7HYY8-Z8WWY-F1MAN-ECKNY-LUXYX
+2	7GKYE-V2YPG-U1P5N-9YF58-2QERV
+```
+
 安装完以后进行网络配置
+
 ```shell
 cd /etc/sysconfig/network-scripts 
 vi ifcfg-en33
