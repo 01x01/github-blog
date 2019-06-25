@@ -2,7 +2,7 @@
 title: threat hunting lab part 2
 date: 2019-06-18 21:48:14
 tags: threat-hunting-lab
-category: [threat-hunting-lab,security]
+Categories: [security,threat-hunting-lab]
 ---
 如何一步步搭建一个 active directory lab
 <!-- more -->

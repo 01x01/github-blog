@@ -2,7 +2,7 @@
 title: threat_hunting_lab_4
 date: 2019-06-23 22:56:15
 tags: threat-hunting-lab
-category: security
+Categories: [security,threat-hunting-lab]
 ---
 threat hunting lab part 4 如何创建、删除、使用组织单元
 

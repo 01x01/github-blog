@@ -2,7 +2,7 @@
 title: threat hunting lab part 3
 date: 2019-06-19 20:25:26
 tags: threat-hunting-lab
-category: threat-hunting-lab,security
+Categories: [security,threat-hunting-lab]
 ---
 设置 Windows server 2012 为 domain controller 和 DHCP 服务器
 <!-- more -->
