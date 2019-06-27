@@ -3,7 +3,7 @@
 title: threat hunting lab part 1 
 date: 2019-06-17 22:16:24
 tags: threat-hunting-lab
-Categories: [security,threat-hunting-lab]
+category: security
 ---
 设置一个实验室，模拟企业管理，使用默认的 VM 网络管理作为我们的 WAN 口，新建一个新的交换机作为内网通信的 LAN 口。
 <!-- more -->
