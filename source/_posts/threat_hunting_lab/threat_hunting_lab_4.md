@@ -1,5 +1,5 @@
 ---
-title: threat_hunting_lab_4
+title: threat hunting lab 4
 date: 2019-06-23 22:56:15
 tags: threat-hunting-lab
 category: security
