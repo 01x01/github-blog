@@ -158,7 +158,29 @@ baidu_push: false
 # External url should start with http:// or https://
 menu:
   home: / || home
-  security: /categories/security 
+  # security: /categories/security 
+  # python: /categories/python 
+  # linux: /linux
+  # django: /categories/django
+  # flask: /categories/flask
+  # websec: /categories/websec
+  # mobilesec: /categories/mobilesec
+  # tornado: /categories/tornado
+  # httpd: /categories/httpd
+  # nginx: /categories/nginx
+  # javascript: /categories/javascript
+  # devOps: /categories/devOps
+  categories: /categories/ || th
+  #schedule: /schedule/ || calendar
+  #sitemap: /sitemap.xml || sitemap
+  #commonweal: /404/ || heartbeat
+
+# Enable / Disable menu icons / item badges.
+menu_settings:
+  icons: true
+  badges: false
+
+wiki:
   python: /categories/python 
   linux: /linux
   django: /categories/django
@@ -170,16 +192,6 @@ menu:
   nginx: /categories/nginx
   javascript: /categories/javascript
   devOps: /categories/devOps
-  # categories: /categories/ || th
-  #schedule: /schedule/ || calendar
-  #sitemap: /sitemap.xml || sitemap
-  #commonweal: /404/ || heartbeat
-
-# Enable / Disable menu icons / item badges.
-menu_settings:
-  icons: true
-  badges: false
-
 
 # ---------------------------------------------------------------
 # Scheme Settings
@@ -198,7 +210,7 @@ scheme: Mist
 # ---------------------------------------------------------------
 
 # Posts / Categories / Tags in sidebar.
-site_state: true
+site_state: false
 
 # Social Links
 # Usage: `Key: permalink || icon`
@@ -271,7 +283,7 @@ sidebar:
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
   #  - remove  totally remove sidebar including sidebar toggle.
-  display: post
+  display: always
 
   # Sidebar offset from top menubar in pixels (only for Pisces | Gemini).
   offset: 12
