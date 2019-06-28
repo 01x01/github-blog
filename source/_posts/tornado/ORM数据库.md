@@ -6,13 +6,12 @@ category: tornado
 ---
 基于 tornado 的 ORM 数据库。
 <!-- more -->
-# tornado-sqlalchemy 
-## 安装
+# 安装
 ```
 pip install pymysq tornado-sqlalchemy alembic 
 ```
-## 使用
-1. 配置数据库
+# 配置
+## 配置数据库
 ```py
 # blog/__init__.py
 from tornado_sqlalchemy import make_session_factory
@@ -29,7 +28,7 @@ def create_app(config_name):
     ...
 
 ```
-2. 声明一个model
+## 声明一个model
 ```py
 # coding: utf-8 
 # this is models for this app
@@ -67,6 +66,26 @@ alembic revision --autogenerate -m "first commit"
 alembic upgrade head 
 alembic downgrade <version-number>
 ```
+# sqlalchemy 操作
+## 查询
+
+## 增加
+
+## 删除
+
+## 修改
+
+# 数据库关系
+## 一对一 
+
+
+## 一对多
+
+
+## 多对多
+
 
 # 参考
 https://tornado-sqlalchemy.readthedocs.io/en/latest/
+https://docs.sqlalchemy.org/en/13/orm/extensions/declarative/basic_use.html
+https://alembic.sqlalchemy.org/en/latest/tutorial.html
