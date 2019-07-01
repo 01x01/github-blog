@@ -128,7 +128,7 @@ print(q1)
 1. 查询同一张表,但是需求不同: 如查询学生信息, 男生身高升序, 女生身高降序.
 2. 多表查询: 多张表的结构是完全一样的,保存的数据(结构)也是一样的.
 
-![orm](/postimg/orm.jpg)
+![orm](/postimg/orm1.jpg)
 
 # 参考
 https://docs.sqlalchemy.org/en/13/orm/query.html

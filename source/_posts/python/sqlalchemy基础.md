@@ -4,7 +4,7 @@ date: 2019-07-01 10:14:42
 tags: 
 category: python
 ---
-sqlalchemy 的基础用法 - 1
+sqlalchemy 的基础用法
 <!-- more -->
 # 版本
 ```
