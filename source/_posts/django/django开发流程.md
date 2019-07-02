@@ -4,15 +4,9 @@ date: 2019-07-02 14:36:27
 tags: 
 category: Django
 ---
-<!-- more -->
----
-title: django的开发流程
-date: 2019-07-02 14:36:27
-tags: 
-category: Django
----
 django 的开发流程
 <!-- more -->
+
 # 初始化
 ## 安装
 ```py
@@ -20,16 +14,32 @@ python -m venv venv
 .\venv\Scripts\activate
 pip install Django, mysqlclient 
 pip freeze > requirements.txt
+
+# mac 下安装 mysqlclient
+cd /usr/local/bin
+chmod 777 mysql_config
+vim mysql_config
+
+#Change
+
+libs="-L$pkglibdir"
+libs="$libs -l "
+
+#to
+
+libs="-L$pkglibdir"
+libs="$libs -lmysqlclient -lssl -lcrypto"
+
 ```
 
 ## 创建应用
 ```py
-django-admin startproject tutorial
+django-admin startproject tutorial .   # 最后面一个点，表示在当前目录下创建 project
 ```
 
 ## 创建 app
 ```py
-django-admin startapp app
+django-admin startapp polls
 ```
 
 # 路由
@@ -50,7 +60,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
-    path('', include('app.urls')),
+    path('', include('polls.urls')),
     path('admin/', admin.site.urls),
 ]
 ```
@@ -73,7 +83,7 @@ python manage.py runserver <host>:<port>
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'comments',
+        'NAME': 'polls',
         'USER': 'root',
         'PASSWORD': 'qwe123',
         'HOST': '127.0.0.1',
@@ -93,7 +103,7 @@ DATABASES = {
 ```py
 INSTALLED_APPS = [
     ...
-    'app.apps.AppConfig'
+    'polls.apps.PollsConfig'
 ]
 ```
 3. 定义模型
@@ -131,6 +141,18 @@ python manage.py shell
 python manage.py createsuperuser
 ```
 打开 `http://127.0.0.1:8000/admin`
+
+然后注册数据库模块
+
+```python
+# polls/admin.py
+from django.contrib import admin
+from .models import Question 
+# Register your models here.
+admin.site.register(Question)
+```
+
+
 
 # 视图
 ```python
