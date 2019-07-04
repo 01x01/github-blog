@@ -49,11 +49,11 @@ select ascii(substring((select user()),[0-9],1))=[ascii码];
 ```
 %20and%20(select%20ascii(substring((select%20database()),1,1)))=11--
 ```
-![photo1](/postimg/photo1-1.png)
-![photo1](/postimg/photo1-2.png)
-![photo1](/postimg/photo1-3.png)
-![photo1](/postimg/photo1-4.png)
-![photo1](/postimg/photo1-5.png)
+![photo1](/postimg/photo1-1.PNG)
+![photo1](/postimg/photo1-2.PNG)
+![photo1](/postimg/photo1-3.PNG)
+![photo1](/postimg/photo1-4.PNG)
+![photo1](/postimg/photo1-5.PNG)
 
 第一步结果得出数据库名为 `level5`
 

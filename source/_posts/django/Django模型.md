@@ -45,3 +45,6 @@ NullBooleanField| 布尔字段，只是多了一个 None 选项
 PhoneNumberField| 电话号码字段
 SlugField| 通常用于 url 的 slug 字段
 URLField| url 字段
+XMLField | XML 字符字段
+
+#  
