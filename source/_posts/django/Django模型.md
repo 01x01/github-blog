@@ -130,6 +130,12 @@ class Contact(models.Model):
 
 ## 一对多
 
+一对多的关系一般使用 `ForeignKey` 来定义
+```python
+
+
+```
+
 
 ## 多对多
 
