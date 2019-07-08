@@ -58,15 +58,11 @@ help_text| string | 帮助信息
 unquie|True/False | 数据库唯一字段约束
 
 # 数据库操作
-定义一个基本的类如下：
-```python
-
-
-```
-
 ## 基本查询
 Django 用于筛选记录的过滤器
 ```
+all() 返回的 QuerySet 包含了数据表中所有的对象。
+get() 不返回 Queryset 对象, 只返回确定的数据库对象
 filter(**kwargs) : 筛选符合条件的过滤器
 exclude(**kwargs)：筛选不符合条件的过滤器
 ```
@@ -115,7 +111,7 @@ obj.delete()
 
 # 数据库关系
 ## 一对一
-在 Django中使用 `OntToOneField` 字段来定义一对一关系。如下所示
+在 Django中使用 `OneToOneField` 字段来定义一对一关系。如下所示
 ```python
 class Account(models.Model):
 	username = models.CharField(max_length=100)
@@ -132,12 +128,41 @@ class Contact(models.Model):
 
 一对多的关系一般使用 `ForeignKey` 来定义
 ```python
+from django.db import models
 
+class Manufacturer(models.Model):
+    # ...
+    pass
+
+class Car(models.Model):
+    manufacturer = models.ForeignKey(Manufacturer, on_delete=models.CASCADE)
+	...
 
 ```
 
 
 ## 多对多
 多对多的关系一般使用 ManyToManyField 来定义，比起 Flask 来说简单了不少。
+```python
+from django.db import models
+
+class Topping(models.Model):
+    # ...
+    pass
+
+class Pizza(models.Model):
+    # ...
+    toppings = models.ManyToManyField(Topping)
 ```
+## 一对多/多对多操作
+当两个对象的关系是多对多的时候，需要使用 `add` 来进行添加
+```python
+>>> john = Author.objects.create(name="John")
+>>> paul = Author.objects.create(name="Paul")
+>>> george = Author.objects.create(name="George")
+>>> ringo = Author.objects.create(name="Ringo")
+>>> entry.authors.add(john, paul, george, ringo)
 ```
+
+# 参考
+https://docs.djangoproject.com/zh-hans/2.2/ref/models/querysets/#queryset-api 
