@@ -79,22 +79,22 @@ Django 特殊的字段查询方式为：
 其谓语列表如下：
 谓语 | 含义 | 示例 | 等价的sql语句
 ---- | ---- | ---- | ----
-exact | 精确等于 | Comments.object.filter(id__exact=1)| `select * from comments where id=1`
-iexact | 大小写不敏感的等于 | Comments.object.filter(title__iexact='I like this') | `select * from comments where upper(title)='I like this';`
-contains| 模糊匹配 | Comments.object.filter(title__contains('I like')) | `select * from comments where title like "%I like%"`
-in | 包含 | Comments.object.filter(id__in([1,5,6])) |  `select * from comment where id in (1,5,6)`
-gt | 大于 | Comments.object.filter(id__gt=30)| `select * from comments where id > 30`
-gte | 大于等于 | Comments.object.filter(id__gte=30) | `select * from comments where id >= 30`
-It | 小于 | Comments.object.filter(id__It=30) | `select * from comments where id < 30`
-Ite | 小于等于 | Comments.object.filter(id__Ite=30) | `select * from comments where id <= 30`
-startswith | 以...开头 | Comments.object.filter(title__startswith="Hello") | `select * from comments where title like "Hello%`
-endswith | 以...结尾 | Comments.object.filter(title__endswith="Hello") | `select * from comments where title like "%Hello`
-range | 在...范围 | Comments.object.filter(pub_date__range(datetime.date(2015,1,1),datetime.date(2015,2,1))) | `select * from comments where pub_date between '2015-1-1' and '2015-2-1'`
-year | 年 | Comments.object.filter(pub_date__year=2015) | `select * from comments where pub_date between 'xxx' and 'xxx'`
-month | 月 | Comments.object.filter(pub_date__year=2015)| `select * from comments where pub_date between 'xxx' and 'xxx'`
-day | 日 | Comments.object.filter(pub_date__year=2015) | `select * from comments where pub_date between 'xxx' and 'xxx'`
-week_day | 星期 | Comments.object.filter(pub_date__year=2015) | `select * from comments where pub_date between 'xxx' and 'xxx'`
-isnull | 是否为null | Comments.object.filter(pub_date__isnull=True) | `select * from comments where pub_date is NULL`
+exact | 精确等于 | `Comments.object.filter(id__exact=1)` | `select * from comments where id=1`
+iexact | 大小写不敏感的等于 | `Comments.object.filter(title__iexact='I like this')` | `select * from comments where upper(title)='I like this';`
+contains| 模糊匹配 | `Comments.object.filter(title__contains('I like'))` | `select * from comments where title like "%I like%"`
+in | 包含 | `Comments.object.filter(id__in([1,5,6]))` |  `select * from comment where id in (1,5,6)`
+gt | 大于 | `Comments.object.filter(id__gt=30)` | `select * from comments where id > 30`
+gte | 大于等于 | `Comments.object.filter(id__gte=30)` | `select * from comments where id >= 30`
+It | 小于 | `Comments.object.filter(id__It=30)` | `select * from comments where id < 30`
+Ite | 小于等于 | `Comments.object.filter(id__Ite=30)` | `select * from comments where id <= 30`
+startswith | 以...开头 | `Comments.object.filter(title__startswith="Hello")` | `select * from comments where title like "Hello%`
+endswith | 以...结尾 | `Comments.object.filter(title__endswith="Hello")` | `select * from comments where title like "%Hello`
+range | 在...范围 | `Comments.object.filter(pub_date__range(datetime.date(2015,1,1),datetime.date(2015,2,1)))` | `select * from comments where pub_date between '2015-1-1' and '2015-2-1'`
+year | 年 | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
+month | 月 | `Comments.object.filter(pub_date__year=2015)`| `select * from comments where pub_date between 'xxx' and 'xxx'`
+day | 日 | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
+week_day | 星期 | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
+isnull | 是否为null | `Comments.object.filter(pub_date__isnull=True)` | `select * from comments where pub_date is NULL`
 
 
 ## 数据保存和删除
