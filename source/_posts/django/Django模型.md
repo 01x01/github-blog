@@ -73,8 +73,11 @@ Django 特殊的字段查询方式为：
 ```
 
 其谓语列表如下：
-属性名 | 含义| 示例 | sql语句
+属性名 | 含义 | 示例 | sql语句
 ---|---|---|---
+1|2|3|4
+
+
 `exact` | `精确等于` | `Comments.object.filter(id__exact=1)` | `select * from comments where id=1`
 `iexact` | `大小写不敏感的等于` | `Comments.object.filter(title__iexact='I like this')` | `select * from comments where upper(title)='I like this';`
 `contains`| `模糊匹配` | `Comments.object.filter(title__contains('I like'))` | `select * from comments where title like "%I like%"`
