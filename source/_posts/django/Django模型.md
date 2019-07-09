@@ -80,9 +80,6 @@ Django 特殊的字段查询方式为：
 
 
 
-
-
-
 # test
 `iexact` | `大小写不敏感的等于` | `Comments.object.filter(title__iexact='I like this')` | `select * from comments where upper(title)='I like this';`
 `contains`| `模糊匹配` | `Comments.object.filter(title__contains('I like'))` | `select * from comments where title like "%I like%"`
