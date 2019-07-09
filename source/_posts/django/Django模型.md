@@ -1,11 +1,10 @@
-<<<<<<< HEAD
-=======
 ---
-title: Django模型
-date: 2019-07-02 16:15:21
+title: django 模型
+date: 2019-07-02 14:36:27
 tags: 
-category: django
+category: Django
 ---
+
 记录 Django 模型的使用
 <!-- more -->
 Django模型层是 Django 自己定义的一套独特的 ORM 技术，将代码中的类映射成数据库中的表，属性映射为数据字段，除此之外，主键，外键，约束，关系等等都是通过类的属性定义完成
@@ -76,39 +75,24 @@ Django 特殊的字段查询方式为：
 
 其谓语列表如下：
 
- 含义 | 示例 | sql语句
----|---|---
- `精确等于` | `Comments.object.filter(id__exact=1)` | `select * from comments where id=1`
- 大小写不敏感的等于 | `Comments.object.filter(title__iexact='I like this'` | `select * from comments where upper(title)='I like this';` 
- 模糊匹配 | `Comments.object.filter(title__contains('I like'))` | `select * from comments where title like "%I like%"` 
- 包含 | `Comments.object.filter(id__in([1,5,6]))` | `select * from comment where id in (1,5,6)` 
- 大于 | `Comments.object.filter(id__gt=30)` | `select * from comments where id > 30` 
- 大于等于 | `Comments.object.filter(id__gte=30)` | `select * from comments where id >= 30` 
- 小于 |  |  
- 小于等于 |  |  
- 以...开头 |  |  
- 以...结尾 |  |  
- 在...范围 |  |  
- 年 |  |  
- 月 |  |  
- 日 |  |  
- 星期 |  |  
- 是否为空 |  |  
-  |  |  
-
-`in` | `包含` | `Comments.object.filter(id__in([1,5,6]))` |  `select * from comment where id in (1,5,6)`
-`gt` | `大于` | `Comments.object.filter(id__gt=30)` | `select * from comments where id > 30`
-`gte` | `大于等于` | `Comments.object.filter(id__gte=30)` | `select * from comments where id >= 30`
-`It` | `小于` | `Comments.object.filter(id__It=30)` | `select * from comments where id < 30`
-`Ite` | `小于等于` | `Comments.object.filter(id__Ite=30)` | `select * from comments where id <= 30`
-`startswith` |` 以...开头` | `Comments.object.filter(title__startswith="Hello")` | `select * from comments where title like "Hello%`
-`endswith` | `以...结尾` | `Comments.object.filter(title__endswith="Hello")` | `select * from comments where title like "%Hello`
-`range` | `在...范围` | `Comments.object.filter(pub_date__range(datetime.date(2015,1,1),datetime.date(2015,2,1)))` | `select * from comments where pub_date between '2015-1-1' and '2015-2-1'`
-`year` | `年` | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
-`month` |`月` | `Comments.object.filter(pub_date__year=2015)`| `select * from comments where pub_date between 'xxx' and 'xxx'`
-`day` |`日` | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
-`week_day` | `星期` | `Comments.object.filter(pub_date__year=2015)` | `select * from comments where pub_date between 'xxx' and 'xxx'`
-`isnull` | `是否为null` | `Comments.object.filter(pub_date__isnull=True)` | `select * from comments where pub_date is NULL`
+ 谓语 | 含义 | 示例 | sql语句
+---|---|---|---
+ exact | `精确等于` | `Comments.object.filter(id__exact=1)` | `select * from comments where id=1`
+ iexact | 大小写不敏感的等于 | `Comments.object.filter(title__iexact='I like this'` | `select * from comments where upper(title)='I like this';` 
+ Contains | 模糊匹配 | `Comments.object.filter(title__contains('I like'))` | `select * from comments where title like "%I like%"` 
+ In | 包含 | `Comments.object.filter(id__in([1,5,6]))` | `select * from comment where id in (1,5,6)` 
+ gt | 大于 | `Comments.object.filter(id__gt=30)` | `select * from comments where id > 30` 
+ gte | 大于等于 | `Comments.object.filter(id__gte=30)` | `select * from comments where id >= 30` 
+ It | 小于 | `Comments.object.filter(id__It=30)` | `select * from comments where id < 30` 
+ Ite | 小于等于 | `Comments.object.filter(id__Ite=30)` | `select * from comments where id <= 30` 
+ startswith | 以...开头 | `Comments.object.filter(title__startswith="Hello")` | `select * from comments where title like "Hello%` 
+ endswith | 以...结尾 | `Comments.object.filter(title__endswith="Hello")` | `select * from comments where title like "%Hello` 
+ range | 在...范围 |  |  
+ year | 年 |  |  
+ month | 月 |  |  
+ day | 日 |  |  
+ weekly | 星期 |  |  
+ isnull | 是否为空 |  |  
 
 
 ## 数据保存和删除
