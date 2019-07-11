@@ -168,4 +168,4 @@ class Pizza(models.Model):
 
 # 参考
 https://docs.djangoproject.com/zh-hans/2.2/ref/models/querysets/#queryset-api 
->>>>>>> 3bd49d0119bef8e739c09a24d20c8d13ffd31cd6
+

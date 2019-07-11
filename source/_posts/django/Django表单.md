@@ -65,6 +65,7 @@ Field
     localize=False,              是否支持本地化
     disabled=False,              是否可以编辑
     label_suffix=None            Label内容后缀  
+    
 CharField(Field)
     max_length=None,             最大长度
     min_length=None,             最小长度
