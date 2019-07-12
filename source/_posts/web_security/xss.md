@@ -60,7 +60,9 @@ javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onm
 ```
 Set.constructor`alert\x28document.domain\x29```
 ```
+
 ## 事件
+
 ```
 FSCommand() (attacker can use this when executed from within an embedded Flash object)
 onAbort() (when user aborts the loading of an image)
@@ -168,6 +170,7 @@ onUnload() (as the user clicks any link or presses the back button or attacker f
 onURLFlip() (this event fires when an Advanced Streaming Format (ASF) file, played by a HTML+TIME (Timed Interactive Multimedia Extensions) media tag, processes script commands embedded in the ASF file)
 seekSegmentTime() (this is a method that locates the specified point on the element's segment time line and begins playing from that point. The segment consists of one repetition of the time line including reverse play using the AUTOREVERSE attribute.)
 ```
+
 # Attacking 
 
 
@@ -198,7 +201,15 @@ seekSegmentTime() (this is a method that locates the specified point on the elem
 |
 .
 ```
-
+## rule3 cookie 使用 HTTPOnly / secure 
+## rule4 CSP 设置
+```
+Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.tld
+```
+## rule5 配置 X-XSS-Protection
+```
+X-XSS-Protection: 1; mode=block
+```
 
 # Reference
 https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet 
