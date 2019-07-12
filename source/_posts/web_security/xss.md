@@ -62,8 +62,7 @@ Set.constructor`alert\x28document.domain\x29```
 ```
 
 ## 事件
-
-```
+```js
 FSCommand() (attacker can use this when executed from within an embedded Flash object)
 onAbort() (when user aborts the loading of an image)
 onActivate() (when object is set as the active element)
@@ -172,11 +171,12 @@ seekSegmentTime() (this is a method that locates the specified point on the elem
 ```
 
 # Attacking 
+pass
 
 
 # Protecting
 ## rule1 转义 html 特殊字符
-```
+```html
  & --> &amp;
  < --> &lt;
  > --> &gt;
@@ -185,7 +185,7 @@ seekSegmentTime() (this is a method that locates the specified point on the elem
  / --> &#x2F; 
  ```
 ## rule2 转义 html 属性特殊字符
-```
+```html
 [space]
 %
 *
