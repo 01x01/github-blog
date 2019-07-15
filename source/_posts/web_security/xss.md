@@ -169,11 +169,6 @@ onUnload() (as the user clicks any link or presses the back button or attacker f
 onURLFlip() (this event fires when an Advanced Streaming Format (ASF) file, played by a HTML+TIME (Timed Interactive Multimedia Extensions) media tag, processes script commands embedded in the ASF file)
 seekSegmentTime() (this is a method that locates the specified point on the element's segment time line and begins playing from that point. The segment consists of one repetition of the time line including reverse play using the AUTOREVERSE attribute.)
 ```
-
-# Attacking 
-pass
-
-
 # Protecting
 ## rule1 转义 html 特殊字符
 ```html
