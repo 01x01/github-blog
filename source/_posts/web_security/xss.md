@@ -196,16 +196,12 @@ seekSegmentTime() (this is a method that locates the specified point on the elem
 |
 .
 ```
-## rule3 cookie 使用 HTTPOnly / secure 
-## rule4 CSP 设置
+## response headers
 ```
+cookie 使用 HTTPOnly / secure 
 Content-Security-Policy: default-src: 'self'; script-src: 'self' static.domain.tld
-```
-## rule5 配置 X-XSS-Protection
-```
 X-XSS-Protection: 1; mode=block
 ```
-
 # Reference
 https://www.owasp.org/index.php/XSS_Filter_Evasion_Cheat_Sheet 
 http://help.dottoro.com/ljfvvdnm.php

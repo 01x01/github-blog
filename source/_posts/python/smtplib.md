@@ -40,4 +40,10 @@ def sendEmail(email_msg):
 if __name__ == '__main__':
     sendEmail("<h1>如何才能取到最新的一个值？</h1>")
 ```
+# 如何发送附件
 
+```python
+attchment = MIMEApplication(open(report_path,'rb').read())
+attchment.add_header('Content-Disposition','attachment',filename='report'+datetime.strftime(datetime.now(),'%Y-%m-%d')+'.html')
+msg.attach(attchment)
+```

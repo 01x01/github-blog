@@ -9,10 +9,7 @@ docker 安装
 <!-- more -->
 
 # 环境
-
 CentOS
-
-
 
 # 安装
 
