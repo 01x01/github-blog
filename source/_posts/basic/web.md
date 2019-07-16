@@ -60,3 +60,67 @@ Warning	|关于消息实体的警告信息|	Warn: 199 Miscellaneous warning
 2. https://www.cnblogs.com/111testing/p/6037579.html
 
 # response
+response 是服务器返回给浏览器的内容，其中也设置了头部，浏览器会识别这些头部，并据此做出一些安全控制。
+## Access-Control-Allow-Origin
+> 响应头指定了该响应的资源是否被允许与给定的origin共享。
+如果服务器指定了一个域，那么为了向客户端表示服务器的返回会根据请求头的不同必须在 Vary响应头包含 Origin, 如下示例： 
+```
+Access-Control-Allow-Origin:https://developer.mozilla.org 
+Vary: Origin
+```
+## Access-Control-Allow-Credentials
+> 该字段可选。它的值是一个布尔值，表示是否允许发送Cookie。默认情况下，Cookie不包括在CORS请求之中。设为true，即表示服务器明确许可，Cookie可以包含在请求中，一起发给服务器。这个值也只能设为true，如果服务器不要浏览器发送Cookie，删除该字段即可。
+```
+Access-Control-Allow-Credentials:true
+```
+开发者必须在 Ajax 中指定
+```js
+var xhr = new XMLHttpRequest();
+xhr.withCredentials = true;
+```
+## Access-Control-Expose-Headers
+> 该字段可选。CORS请求时，XMLHttpRequest对象的getResponseHeader()方法只能拿到6个基本字段：`Cache-Control`、`Content-Language`、`Content-Type`、`Expires`、`Last-Modified`、`Pragma`。如果想拿到其他字段，就必须在`Access-Control-Expose-Headers`里面指定。
+
+## Access-Control-Request-Method
+> 该字段是必须的，用来列出浏览器的CORS请求会用到哪些HTTP方法，
+
+## Access-Control-Request-Headers
+> 该字段是一个逗号分隔的字符串，指定浏览器CORS请求会额外发送的头信息字段，
+
+## Content-Security-Policy
+> 用于站点管理者控制用户代理能够为指定的页面加载哪些资源。主要用于防止跨站脚本攻击（Cross-Site Script），因为浏览器无法区分脚本来自应用的哪一部分，哪一部分是恶意注入的，因此 CSP 就是一个很好的白名单机制，如下例子所示，这个指令表示，脚本来源于本域或者 `https://apis.google.com` 才可信，其余都不可信，浏览器会根据这个指令不加载脚本。这里指定了 `script-src` 如果使用 `default-src` 则表示多包含了字体，图片等等来源
+```
+Content-Security-Policy: script-src 'self' https://apis.google.com
+```
+此来源列表还接受四个关键字：
+
+1. 'none' 不执行任何匹配。
+2. 'self' 与当前来源（而不是其子域）匹配。
+3. 'unsafe-inline' 允许使用内联 JavaScript 和 CSS。
+4. 'unsafe-eval' 允许使用类似 eval 的 text-to-JavaScript 机制。
+
+如果使用内联的写法，需要指定代码的hash值，或者在 `script` 里面指定**随机** `nonce` 值
+```
+<meta http-equiv="Content-Security-Policy" content="script-src self unsafe-inline 'sha256-XM0Su1LETFTVr8lc5gkhpMw/BjB8QwzDWdMvvdB8LfM=' https://www.baidu.com">
+
+```
+
+更多可以阅读： https://developers.google.com/web/fundamentals/security/csp/?hl=zh-cn
+
+## X-XSS-Protection
+当检测到跨站脚本攻击 (XSS)时，浏览器将停止加载页面。
+```
+X-XSS-Protection: 1; mode=block
+# 参数解释
+0
+禁止XSS过滤。
+
+1
+启用XSS过滤（通常浏览器是默认的）。 如果检测到跨站脚本攻击，浏览器将清除页面（删除不安全的部分）。
+
+1;mode=block
+启用XSS过滤。 如果检测到攻击，浏览器将不会清除页面，而是阻止页面加载。
+
+1; report=<reporting-URI>  (Chromium only)
+启用XSS过滤。 如果检测到跨站脚本攻击，浏览器将清除页面并使用CSP report-uri指令的功能发送违规报告
+```
