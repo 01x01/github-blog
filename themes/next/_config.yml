@@ -181,7 +181,7 @@ menu_settings:
   badges: false
 
 wiki:
-  python: /categories/python 
+  #python: /categories/python 
   
   
 
@@ -190,8 +190,8 @@ wiki:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
-scheme: Mist
+scheme: Muse
+#scheme: Mist
 #scheme: Pisces
 #scheme: Gemini
 
