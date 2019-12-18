@@ -182,16 +182,8 @@ menu_settings:
 
 wiki:
   python: /categories/python 
-  linux: /linux
-  django: /categories/django
-  flask: /categories/flask
-  websec: /categories/websec
-  mobilesec: /categories/mobilesec
-  tornado: /categories/tornado
-  httpd: /categories/httpd
-  nginx: /categories/nginx
-  javascript: /categories/javascript
-  devOps: /categories/devOps
+  
+  
 
 # ---------------------------------------------------------------
 # Scheme Settings
